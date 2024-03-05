@@ -1,0 +1,288 @@
+*{
+	margin:0;
+	padding:0;
+	transition: 0.6s;
+}
+body{
+	min-height: 100%;	
+}
+.top-div{
+	background-image: url(../Image/top.webp);
+	width: 100%;
+	height: 100vh;
+}
+
+.top-mask{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0, 0, 0.5);
+}
+
+.top-menu{
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0,0,0,0.6);
+	position: sticky;
+	top: 0px;
+}
+
+.top-menu-left{
+	width: 13%;
+	float: left;
+	height: 100%;
+	color: white;
+	line-height: 60px;
+	background-color: rgba(0,0, 0, 0.6);
+	font-weight: 200;
+	font-size: 20px;
+	padding-left: 20px;	
+}
+
+.top-menu-right{
+	float: right;
+	height: 100%;
+	color: white;
+	padding-right: 20px;
+
+}
+.top-menu-right>ul>li{
+	float: right;
+	list-style: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 60px;
+	height: 60px;
+	font-style: inherit;
+	font-weight: 6.25rem;
+}
+.top-title{
+	padding-top: 13%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 40pt;
+	font-weight: 150px;
+	text-shadow: black 10px 10px 5px;
+}
+.top-title>div{
+	font-size: 20pt;
+}
+.body-div{
+	height: 100vh;
+	background-image: url(../Image/body.webp);
+	background-attachment: fixed;
+	/* position: fixed; */
+	width: 100%;
+}
+.body-main{
+	background-color: black;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	height: 100vh;
+	
+}
+.content{
+	padding-top: 10vh;
+}
+
+.wave1{
+	background: url(../Image/wave1.png);
+	height: 100px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	animation: cloudanimate1 60s linear infinite;
+}
+
+.wave2{
+	background: url(../Image/wave2.png);
+	height: 84px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	animation: cloudanimate2 60s linear infinite;
+}
+
+@keyframes cloudanimate1{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes cloudanimate2{
+	0%{
+		background-position: 100% 50%;
+	}
+	50%{
+		background-position: 0% 50%;
+	}
+	100%{
+		background-position: 100% 50%;
+	}
+}
+
+.middle-page{
+	height: 200vh;
+	width: 100%;
+	background-color: rgb(255, 255, 200,0.2);
+	background-size: cover;
+	padding-top: 100px;
+}
+
+.screen{
+	width: 100%;
+	height:40%;
+	background-color: rgba(0,0, 0, 0);
+	padding-top: 60px;
+}
+
+#box-left{
+	height: 10%;
+	width: 3%;
+	background-color: rgba(0,0, 0, 0.2);
+	float: left;
+	margin-top: 13%;
+	margin-left: 8%;
+	font-size: 30px;
+	text-align: center;
+	line-height: 55px;
+	border-radius: 10px;
+}
+
+#box-left:hover{
+	background-color: rgba(0,0, 0, 0.4);
+}
+
+.middle-top-screen{
+	width: 70%;
+	height: 400px;
+	margin-left: 3%;
+	background-color: rgba(0,0, 0, 0.2);
+	border-radius: 10px;
+	padding: 30px;
+	box-shadow: 0px 1px 10px rgba(102, 102, 102, 0.6);
+	transition: 0.5s;
+	float: left;
+}
+
+.middle-top-screen:hover{
+	box-shadow: 0px 5px 20px grey;
+}
+
+#box-right{
+	height: 10%;
+	width: 3%;
+	background-color: rgba(0,0, 0, 0.2);
+	margin-left: 3%;
+	margin-top: 13%;
+	float: left;
+	font-size: 30px;
+	text-align: center;
+	line-height: 55px;
+	border-radius: 10px;
+}
+
+#box-right:hover{
+	background-color: rgba(0,0, 0, 0.4);
+}
+
+#screen-box1{
+	width: 70%;
+	height: 54%;
+	background-color: rgba(0,0,0,1);
+	position: absolute;
+	opacity: 1;
+}
+
+#screen-1{
+	width: 32%;
+	height: 100%;
+	background-image: url(../Image/num2.jpg);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	float: left;
+}
+
+.screen-2{
+	width: 68%;
+	height: 50%;
+	background-image: url(../Image/num1.jpg);
+	background-size: contain;
+	float: left;
+}
+
+.screen-3{
+	width: 68%;
+	height: 50%;
+	background-image: url(../Image/num3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.m-m-page{
+	width: 74%;
+	height: 60%;
+	background-color: rgba(0,0, 0, 0.2);
+	padding: 20px;
+	margin-left: 13%;
+	margin-top: 10%;
+	transition: 0.5s;
+	border-radius: 10px;
+}
+
+.mm-1{
+	width: 30%;
+	height: 100%;
+	float: left;
+	border-radius: 5px;
+	background-color: red;
+}
+
+.mm-2{
+	width: 60%;
+	height: 5%;
+	background-color: black;
+	float: left;
+	border-radius: 80px;
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+.mm-3{
+	width: 60%;
+	height: 20%;
+	background-color: black;
+	float: left;
+	border-radius: 5px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.mm-4{
+	width: 60%;
+	height: 5%;
+	background-color: black;
+	float: left;
+	border-radius: 80px;
+	margin-left: 20px;
+	margin-top: 160px;
+}
+
+.mm-5{
+	width: 60%;
+	height: 20%;
+	background-color: black;
+	float: left;
+	border-radius: 5px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
