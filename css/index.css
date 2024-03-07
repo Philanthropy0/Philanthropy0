@@ -3,6 +3,7 @@
 	padding:0;
 	transition: 0.6s;
 }
+
 body{
 	min-height: 100%;	
 }
@@ -10,6 +11,7 @@ body{
 	background-image: url(../Image/top.webp);
 	width: 100%;
 	height: 100vh;
+	background-attachment: fixed;
 }
 
 .top-mask{
@@ -67,13 +69,7 @@ body{
 .top-title>div{
 	font-size: 20pt;
 }
-.body-div{
-	height: 100vh;
-	background-image: url(../Image/body.webp);
-	background-attachment: fixed;
-	/* position: fixed; */
-	width: 100%;
-}
+
 .body-main{
 	background-color: black;
 	width: 60%;
@@ -93,6 +89,7 @@ body{
 	bottom: 0px;
 	width: 100%;
 	animation: cloudanimate1 60s linear infinite;
+
 }
 
 .wave2{
@@ -102,6 +99,7 @@ body{
 	bottom: 0px;
 	width: 100%;
 	animation: cloudanimate2 60s linear infinite;
+	/* opacity: 0.8; */
 }
 
 @keyframes cloudanimate1{
@@ -131,9 +129,12 @@ body{
 .middle-page{
 	height: 200vh;
 	width: 100%;
-	background-color: rgb(255, 255, 200,0.2);
+	/* background-image: url(../Image/num4.jpg); */
+	/* background-color: rgba(255, 25, 245, 1); */
 	background-size: cover;
+	background-attachment: fixed;
 	padding-top: 100px;
+	opacity: 1;
 }
 
 .screen{
@@ -154,17 +155,18 @@ body{
 	text-align: center;
 	line-height: 55px;
 	border-radius: 10px;
+	color: white;
 }
 
 #box-left:hover{
-	background-color: rgba(0,0, 0, 0.4);
+	background-color: rgba(0,0, 0, 0.8);
 }
 
 .middle-top-screen{
 	width: 70%;
 	height: 400px;
 	margin-left: 3%;
-	background-color: rgba(0,0, 0, 0.2);
+	background-color: rgba(255,255, 255, 0.2);
 	border-radius: 10px;
 	padding: 30px;
 	box-shadow: 0px 1px 10px rgba(102, 102, 102, 0.6);
@@ -187,10 +189,11 @@ body{
 	text-align: center;
 	line-height: 55px;
 	border-radius: 10px;
+	color: white;
 }
 
 #box-right:hover{
-	background-color: rgba(0,0, 0, 0.4);
+	background-color: rgba(0,0, 0, 0.8);
 }
 
 #screen-box1{
@@ -202,41 +205,45 @@ body{
 }
 
 #screen-1{
-	width: 32%;
+	width: 35%;
 	height: 100%;
-	background-image: url(../Image/num2.jpg);
+	background-image: url(../Image/num1.jpg);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 	border-radius: 10px;
 	float: left;
 }
 
-.screen-2{
-	width: 68%;
+#screen-2{
+	width: 65%;
 	height: 50%;
-	background-image: url(../Image/num1.jpg);
+	background-image: url(../Image/num2.jpg);
 	background-size: contain;
+	background-size:100% 100%;
+	background-repeat: no-repeat;
 	float: left;
 }
 
-.screen-3{
-	width: 68%;
+#screen-3{
+	width: 65%;
 	height: 50%;
 	background-image: url(../Image/num3.jpg);
 	background-size: cover;
+		background-size:100% 100%;
 	background-repeat: no-repeat;
 	float: left;
 }
 
 .m-m-page{
 	width: 74%;
-	height: 60%;
-	background-color: rgba(0,0, 0, 0.2);
+	height: 50%;
+	background-color: rgba(255,255,255, 0.4);
 	padding: 20px;
 	margin-left: 13%;
-	margin-top: 10%;
+	margin-top: 1%;
 	transition: 0.5s;
 	border-radius: 10px;
+	box-shadow: 0px 1px 10px rgba(102, 102, 102, 0.6);
 }
 
 .mm-1{
